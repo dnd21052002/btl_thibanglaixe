@@ -108,6 +108,7 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ok = true;
                 dialogFinish.show();
             }
         });

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:popupTheme="@style/AppTheme"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/tv_diem"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:text="20/20"
+        android:textSize="@dimen/_25ssp"
+        android:gravity="center"
+        android:textColor="#e90514"
+        />
+    <ImageView
+        android:id="@+id/img_ketQua"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="@dimen/_183sdp"
+        android:layout_height="@dimen/_183sdp"
+        android:src="@drawable/dochot"
+        />
+    <Button
+        android:id="@+id/btXemDapAn"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_41sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Xem lại đáp án"
+        android:textAllCaps="false"
+        android:background="@drawable/button_dethi"
+        android:textColor="#fff"
+        />
+    <Button
+        android:id="@+id/btDeThiKhac"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_41sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Làm bộ đề thi khác"
+        android:textAllCaps="false"
+        android:background="@drawable/button_dethi"
+        android:textColor="#fff"
+        />
+
+</LinearLayout>
