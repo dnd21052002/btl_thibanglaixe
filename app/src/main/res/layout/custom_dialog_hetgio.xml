@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_17sdp"
+    android:background="@android:color/transparent"
+    android:alpha="1"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/custom_title_thisathach"
+        android:layout_width="@dimen/_225sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E0E0E0"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/_17sdp"
+            android:text="Thông báo"
+            android:textColor="#000"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đã hết giờ làm bài"
+            android:textColor="#000"
+            android:layout_marginBottom="@dimen/_17sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000"/>
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="@android:color/transparent"
+            android:textColor="#275ee9"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

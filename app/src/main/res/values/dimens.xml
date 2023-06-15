@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_divider_height">0.1dp</dimen>
+    <dimen name="default_divider_padding">10dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+</resources>

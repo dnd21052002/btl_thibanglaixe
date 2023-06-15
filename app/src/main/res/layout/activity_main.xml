@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ln1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:popupTheme="@style/AppTheme"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thi bằng lái xe"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textSize="22.10sp"
+                android:textColor="#fff"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32.5dp"
+            android:src="@drawable/app_icon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="65dp"
+            >
+
+            <LinearLayout
+                android:paddingLeft="32.5dp"
+                android:paddingRight="32.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20.8dp">
+
+                <LinearLayout
+                    android:id="@+id/bt_thiSatHach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/thisathach" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="top|center"
+                        android:text="Thi sát hạch"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_bienBao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/bienbao" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="top|center"
+                        android:text="Biển báo"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingLeft="32.5dp"
+                android:paddingRight="32.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="26dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/bt_lyThuyet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/lythuyet"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="top|center"
+                        android:text="Lý thuyết"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/bt_meoGhiNho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/meoghinho"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="top|center"
+                        android:text="Mẹo ghi nhớ"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="32.5dp"
+                android:paddingRight="32.5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="26dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/bt_meoThucHanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/meothuchanh"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="top|center"
+                        android:text="Mẹo thực hành"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/bt_lichSuBaiThi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:src="@drawable/lichsubaithi"
+                            />
+                    </LinearLayout>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="top|center"
+                        android:text="Lịch sử bài thi"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
