@@ -23,12 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ThiSatHachActivity"
-            android:parentActivityName=".Activities.MainActivity"
+        <activity
+            android:name=".Activities.ThiSatHachActivity"
             android:label="Thi sát hạch"
-            android:screenOrientation="portrait"
-            >
-        </activity>
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/default_header_color"
+            android:popupTheme="@style/AppTheme"
+            app:theme="@style/ToolbarColoredBackArrow">
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_bienBao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="@dimen/_41sdp"
+        android:layout_height="@dimen/_41sdp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        app:backgroundTint="@null"
+        android:background="@drawable/ic_menu"/>
+
+</FrameLayout>
