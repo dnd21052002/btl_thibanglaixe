@@ -73,11 +73,6 @@ public class KetQuaActivity extends AppCompatActivity implements View.OnClickLis
         if (view==btXemDapAn){
             Intent intent_xemDapAn = new Intent(KetQuaActivity.this,XemLaiDapAnActivity.class);
             startActivity(intent_xemDapAn);
-            MainActivity.dem7++;
-            if (MainActivity.dem7==3||MainActivity.checkTime ){
-                MainActivity.dem7 = 0;
-                MainActivity.checkTime = false;
-            }
         } else if (view==btDeThiKhac){
             Intent intent_thiSatHach = new Intent(KetQuaActivity.this,ThiSatHachActivity.class);
             if (SIZE == 20){

@@ -214,10 +214,6 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
                 }
                 Intent intent_ketQua = new Intent(ThiSatHachActivity.this,KetQuaActivity.class);
                 intent_ketQua.putExtra("soCauDung",soCauDung);
-                MainActivity.dem7++;
-                if (MainActivity.dem7==5){
-                    MainActivity.dem7 = 0;
-                }
                 for (int i=0;i<a.size();i++) sttCauHoi[i]= (int) a.get(i);
                 startActivity(intent_ketQua);
                 t.interrupt();
