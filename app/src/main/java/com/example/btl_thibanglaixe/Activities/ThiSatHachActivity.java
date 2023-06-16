@@ -69,7 +69,7 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         randomCauHoi();
         setControl();
         listDeThi = docFile("lichsu.txt");
-        if (listDeThi.size()<20){
+        if (listDeThi.size()<30){
             listDeThi.add(new DeThi(list));
         } else {
             for (int i=19;i>=1;i--) listDeThi.set(i,listDeThi.get(i-1));
