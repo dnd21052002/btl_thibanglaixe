@@ -57,11 +57,6 @@ public class AdapterRecyclerViewLichSuBaiThi extends RecyclerView.Adapter<Adapte
                 int SIZE = listDeThi.get(pos).getListCauHoi().size();
                 intent_xemDapAn.putExtra("from", 'l');
                 context.startActivity(intent_xemDapAn);
-                MainActivity.dem8++;
-                if (MainActivity.dem8 == 3 || MainActivity.checkTime) {
-                    MainActivity.dem8 = 0;
-                    MainActivity.checkTime = false;
-                }
             }
         });
     }

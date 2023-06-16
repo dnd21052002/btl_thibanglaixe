@@ -69,7 +69,7 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         randomCauHoi();
         setControl();
         listDeThi = docFile("lichsu.txt");
-        if (listDeThi.size()<20){
+        if (listDeThi.size()<30){
             listDeThi.add(new DeThi(list));
         } else {
             for (int i=19;i>=1;i--) listDeThi.set(i,listDeThi.get(i-1));
@@ -214,10 +214,6 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
                 }
                 Intent intent_ketQua = new Intent(ThiSatHachActivity.this,KetQuaActivity.class);
                 intent_ketQua.putExtra("soCauDung",soCauDung);
-                MainActivity.dem7++;
-                if (MainActivity.dem7==5){
-                    MainActivity.dem7 = 0;
-                }
                 for (int i=0;i<a.size();i++) sttCauHoi[i]= (int) a.get(i);
                 startActivity(intent_ketQua);
                 t.interrupt();
