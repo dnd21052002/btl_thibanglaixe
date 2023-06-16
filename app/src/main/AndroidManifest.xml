@@ -29,6 +29,26 @@
             android:screenOrientation="portrait"
             >
         </activity>
+        <activity android:name=".Activities.KetQuaActivity"
+            android:parentActivityName=".Activities.MainActivity"
+            android:label="Kết quả thi"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".Activities.XemLaiDapAnActivity"
+            android:parentActivityName=".Activities.KetQuaActivity"
+            android:label="Xem lại đáp án"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".Activities.LichSuBaiThiActivity"
+            android:parentActivityName=".Activities.MainActivity"
+            android:label="Lịch sử bài thi"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
     </application>
 
 </manifest>

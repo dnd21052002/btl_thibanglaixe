@@ -18,11 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.btl_thibanglaixe.Model.CauHoi;
 import com.example.btl_thibanglaixe.R;
 
-/**
- * Created by Hiep on 9/13/2017.
- */
-
-
 public class AdapterRecyclerViewThiSatHach extends RecyclerView.Adapter<AdapterRecyclerViewThiSatHach.RecyclerViewHolder> {
     CauHoi cauHoi;
     int pos;
