@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.btl_thibanglaixe.Model.BienBao;
 import com.example.btl_thibanglaixe.R;
 import com.timehop.stickyheadersrecyclerview.StickyRecyclerHeadersAdapter;
 
@@ -21,7 +22,7 @@ public class AdapterRecylerViewBienBao extends RecyclerView.Adapter<AdapterRecyl
     List<BienBao> listBienBao = new ArrayList<BienBao>();
     Context context;
     private LayoutInflater mInflater;
-    public AdapterRecyclerViewBienBao(Context context,List<BienBao> listBienBao) {
+    public AdapterRecylerViewBienBao(Context context,List<BienBao> listBienBao) {
         this.listBienBao = listBienBao;
         this.context = context;
         mInflater = LayoutInflater.from(context);
@@ -29,7 +30,7 @@ public class AdapterRecylerViewBienBao extends RecyclerView.Adapter<AdapterRecyl
 
     @Override
     public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = mInflater.inflate(R.layout.layout_recyclerview_bienbao,parent,false);
+        View itemView = mInflater.inflate(R.layout.layout_reyclerview_bienbao,parent,false);
         return new RecyclerViewHolder(itemView);
     }
 

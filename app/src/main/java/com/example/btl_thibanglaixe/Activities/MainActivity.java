@@ -73,6 +73,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == R.id.bt_thiSatHach) {
             setDialogThiSatHach();
         }
+        if(view.getId() == R.id.bt_bienBao){
+            Intent intentBienBao = new Intent(this,BienBaoActivity.class);
+            startActivity(intentBienBao);
+            dem2++;
+            if (dem2==3 || checkTime){
+                dem2 = 0;
+                checkTime = false;
+            }
+        }
         if(view.getId() == R.id.bt_cancel1) {
             dialogThiSatHach.dismiss();
         }
@@ -88,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 checkTime = false;
             }
         }
+
 
     }
 
