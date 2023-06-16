@@ -92,11 +92,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intentThiSatHachA.putExtra("tenBaiThi",'a');
             startActivity(intentThiSatHachA);
             dialogThiSatHach.dismiss();
-            dem1++;
-            if (dem1==3 || checkTime){
-                dem1 = 0;
-                checkTime = false;
-            }
+        }
+
+        if(view.getId() == R.id.bt_b121) {
+            Intent intentThiSatHachB = new Intent(MainActivity.this, ThiSatHachActivity.class);
+            intentThiSatHachB.putExtra("tenBaiThi",'b');
+            startActivity(intentThiSatHachB);
+            dialogThiSatHach.dismiss();
         }
 
     }
