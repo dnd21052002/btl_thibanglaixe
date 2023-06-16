@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/default_header_color"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:popupTheme="@style/AppTheme"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_lichSuBaiThi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:padding="@dimen/item_offset"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

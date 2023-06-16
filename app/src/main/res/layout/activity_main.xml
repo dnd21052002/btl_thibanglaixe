@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B3ABAD">
 
 
 
@@ -86,8 +87,8 @@
                         android:gravity="top|center"
                         android:text="Thi sát hạch"
                         android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="13sp" />
+                        android:textColor="#315C7E"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -120,8 +121,8 @@
                         android:gravity="top|center"
                         android:text="Biển báo"
                         android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="13sp" />
+                        android:textColor="#315C7E"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -164,8 +165,8 @@
                         android:gravity="top|center"
                         android:text="Lý thuyết"
                         android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="13sp" />
+                        android:textColor="#315C7E"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -196,9 +197,9 @@
                         android:clickable="false"
                         android:gravity="top|center"
                         android:text="Mẹo ghi nhớ"
-                        android:textColor="@color/black"
+                        android:textColor="#315C7E"
                         android:textAllCaps="false"
-                        android:textSize="13sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -240,8 +241,8 @@
                         android:gravity="top|center"
                         android:text="Mẹo thực hành"
                         android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="13sp" />
+                        android:textColor="#315C7E"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -272,9 +273,9 @@
                         android:clickable="false"
                         android:gravity="top|center"
                         android:text="Lịch sử bài thi"
-                        android:textColor="@color/black"
+                        android:textColor="#315C7E"
                         android:textAllCaps="false"
-                        android:textSize="13sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

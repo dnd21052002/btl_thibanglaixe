@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_cancel1.setOnClickListener(this);
     }
 
-    @SuppressLint("NonConstantResourceId")
     public void onClick(View view) {
         if (view.getId() == R.id.bt_thiSatHach) {
             setDialogThiSatHach();
@@ -76,11 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(view.getId() == R.id.bt_bienBao){
             Intent intentBienBao = new Intent(this,BienBaoActivity.class);
             startActivity(intentBienBao);
-            dem2++;
-            if (dem2==3 || checkTime){
-                dem2 = 0;
-                checkTime = false;
-            }
+        }
+        if(view.getId() == R.id.bt_lichSuBaiThi) {
+            Intent intent_lichsu = new Intent(MainActivity.this,LichSuBaiThiActivity.class);
+            startActivity(intent_lichsu);
         }
         if(view.getId() == R.id.bt_cancel1) {
             dialogThiSatHach.dismiss();
@@ -91,11 +89,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intentThiSatHachA.putExtra("tenBaiThi",'a');
             startActivity(intentThiSatHachA);
             dialogThiSatHach.dismiss();
-            dem1++;
-            if (dem1==3 || checkTime){
-                dem1 = 0;
-                checkTime = false;
-            }
+        }
+
+        if(view.getId() == R.id.bt_b121) {
+            Intent intentThiSatHachB = new Intent(MainActivity.this, ThiSatHachActivity.class);
+            intentThiSatHachB.putExtra("tenBaiThi",'b');
+            startActivity(intentThiSatHachB);
+            dialogThiSatHach.dismiss();
         }
 
 
