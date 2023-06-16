@@ -88,7 +88,7 @@
                         android:text="Thi sát hạch"
                         android:textAllCaps="false"
                         android:textColor="#315C7E"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -122,7 +122,7 @@
                         android:text="Biển báo"
                         android:textAllCaps="false"
                         android:textColor="#315C7E"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -166,7 +166,7 @@
                         android:text="Lý thuyết"
                         android:textAllCaps="false"
                         android:textColor="#315C7E"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -199,7 +199,7 @@
                         android:text="Mẹo ghi nhớ"
                         android:textColor="#315C7E"
                         android:textAllCaps="false"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -242,7 +242,7 @@
                         android:text="Mẹo thực hành"
                         android:textAllCaps="false"
                         android:textColor="#315C7E"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -275,7 +275,7 @@
                         android:text="Lịch sử bài thi"
                         android:textColor="#315C7E"
                         android:textAllCaps="false"
-                        android:textSize="14sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
