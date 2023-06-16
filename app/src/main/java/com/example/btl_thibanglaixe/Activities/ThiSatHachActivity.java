@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.ActionBar;
 
-import android.widget.OverScroller;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 
@@ -25,6 +24,7 @@ import com.example.btl_thibanglaixe.DAO.CauHoiDAO;
 import com.example.btl_thibanglaixe.Model.CauHoi;
 import com.example.btl_thibanglaixe.Model.DeThi;
 import com.example.btl_thibanglaixe.R;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -55,6 +55,7 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
     StringBuilder [] dapAnLuaChon = new StringBuilder[35];
     public static int sttCauHoi [] = new int[100];
     public static boolean checkDungSai[] = new boolean[100];
+    List<DeThi> listDeThi = new ArrayList<>();
     Thread t;
     Toolbar toolbar;
     int FLAG=0;
@@ -67,9 +68,54 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         else SIZE = 30;
         randomCauHoi();
         setControl();
+        listDeThi = docFile("lichsu.txt");
+        if (listDeThi.size()<20){
+            listDeThi.add(new DeThi(list));
+        } else {
+            for (int i=19;i>=1;i--) listDeThi.set(i,listDeThi.get(i-1));
+            listDeThi.set(0,new DeThi(list));
+        }
+        ghiFile(listDeThi);
         t = new Thread(this);
         FLAG = 1;
         t.start();
+    }
+
+    public List<DeThi> docFile(String fileName){
+        List<DeThi> listDeThi = new ArrayList<>();
+        try {
+            File file = getFileStreamPath(fileName);
+            if (file==null||!file.exists()){
+                file = new File(fileName);
+            }
+            FileInputStream fis = new FileInputStream(file);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            listDeThi = (List<DeThi>) ois.readObject();
+            ois.close();
+            fis.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return listDeThi;
+    }
+
+    public void ghiFile(List<DeThi> listDeThi){
+        try {
+            File file = getFileStreamPath("lichsu.txt");
+            FileOutputStream fos = new FileOutputStream(file);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(listDeThi);
+            oos.close();
+            fos.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setControl(){
