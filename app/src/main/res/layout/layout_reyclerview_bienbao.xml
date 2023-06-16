@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="107.90dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_83sdp"
+        android:layout_height="@dimen/_83sdp"
+        android:src="@drawable/bienbao1"
+        android:layout_marginLeft="@dimen/_9sdp"
+        />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_noiDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội dung"
+        android:textColor="#000"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:textSize="@dimen/_13ssp"
+        />
+
+</LinearLayout>

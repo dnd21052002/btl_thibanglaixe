@@ -23,9 +23,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ThiSatHachActivity"
-            android:parentActivityName=".Activities.MainActivity"
+        <activity
+            android:name=".Activities.ThiSatHachActivity"
             android:label="Thi sát hạch"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.BienBaoActivity"
+            android:parentActivityName=".Activities.MainActivity"
+            android:label="Biển báo"
             android:screenOrientation="portrait"
             >
         </activity>

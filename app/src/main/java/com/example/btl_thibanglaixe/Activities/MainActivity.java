@@ -68,20 +68,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_cancel1.setOnClickListener(this);
     }
 
-    @SuppressLint("NonConstantResourceId")
     public void onClick(View view) {
         if (view.getId() == R.id.bt_thiSatHach) {
             setDialogThiSatHach();
         }
-
+        if(view.getId() == R.id.bt_bienBao){
+            Intent intentBienBao = new Intent(this,BienBaoActivity.class);
+            startActivity(intentBienBao);
+        }
         if(view.getId() == R.id.bt_lichSuBaiThi) {
             Intent intent_lichsu = new Intent(MainActivity.this,LichSuBaiThiActivity.class);
             startActivity(intent_lichsu);
-            dem6++;
-            if (dem6==3 || checkTime){
-                dem6 = 0;
-                checkTime = false;
-            }
         }
         if(view.getId() == R.id.bt_cancel1) {
             dialogThiSatHach.dismiss();
@@ -100,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intentThiSatHachB);
             dialogThiSatHach.dismiss();
         }
+
 
     }
 
