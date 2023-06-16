@@ -69,7 +69,7 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         randomCauHoi();
         setControl();
         listDeThi = docFile("lichsu.txt");
-        if (listDeThi.size()<30){
+        if (listDeThi.size()<20){
             listDeThi.add(new DeThi(list));
         } else {
             for (int i=19;i>=1;i--) listDeThi.set(i,listDeThi.get(i-1));
@@ -118,11 +118,11 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
-    public void setControl(){
+    public void setControl() {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
-
+        //actionBar.setDisplayHomeAsUpEnabled(true);
         tv_time = findViewById(R.id.tv_time);
         setTime();
         bt_truoc = findViewById(R.id.bt_truoc);
@@ -145,8 +145,8 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
         bt_cancel.setOnClickListener(this);
         for (int i=0;i<SIZE;i++) dapAnLuaChon[i] = new StringBuilder();
         rcv_thiSatHach = findViewById(R.id.rcv_thiSatHach);
-        rcv_thiSatHach.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
-        adapterRecyclerViewThiSatHach = new AdapterRecyclerViewThiSatHach(this, list.get(0),0);
+        rcv_thiSatHach.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        adapterRecyclerViewThiSatHach = new AdapterRecyclerViewThiSatHach(this,list.get(0),0);
         rcv_thiSatHach.setAdapter(adapterRecyclerViewThiSatHach);
         rcv_thiSatHach.setOverScrollMode(View.OVER_SCROLL_ALWAYS);
         RecyclerViewHeader header = findViewById(R.id.header);
@@ -197,43 +197,54 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
                 dialogFinish.show();
             }
         }
-        if(view.getId() == R.id.bt_dongY || view.getId() == R.id.bt_cancel) {
+        if(view.getId() == R.id.bt_huyBo) {
+            dapAnLuaChon[dem-1] = adapterRecyclerViewThiSatHach.getDA();
+            dialogFinish.dismiss();
+        }
+        if(view.getId() == R.id.bt_dongY) {
             FLAG = 0;
-            if (ok){
-                dapAnLuaChon[dem-1] = adapterRecyclerViewThiSatHach.getDA();
+            if (ok) {
+                dapAnLuaChon[dem - 1] = adapterRecyclerViewThiSatHach.getDA();
                 soCauDung = 0;
-                for (int i=0;i<SIZE;i++){
-                    Log.d("Dap an dung cau "+(i+1),list.get(i).getDapAn());
-                    Log.d("Dap an lua chon cau "+(i+1),dapAnLuaChon[i].toString());
-                    if (list.get(i).getDapAn().compareTo(dapAnLuaChon[i].toString())==0){
+                for (int i = 0; i < SIZE; i++) {
+                    Log.d("Dap an dung cau " + (i + 1), list.get(i).getDapAn());
+                    Log.d("Dap an lua chon cau " + (i + 1), dapAnLuaChon[i].toString());
+                    if (list.get(i).getDapAn().compareTo(dapAnLuaChon[i].toString()) == 0) {
                         soCauDung++;
                         checkDungSai[i] = true;
                     } else {
                         checkDungSai[i] = false;
                     }
                 }
-                Intent intent_ketQua = new Intent(ThiSatHachActivity.this,KetQuaActivity.class);
-                intent_ketQua.putExtra("soCauDung",soCauDung);
-                for (int i=0;i<a.size();i++) sttCauHoi[i]= (int) a.get(i);
+                Intent intent_ketQua = new Intent(ThiSatHachActivity.this, KetQuaActivity.class);
+                intent_ketQua.putExtra("soCauDung", soCauDung);
+                for (int i = 0; i < a.size(); i++) sttCauHoi[i] = (int) a.get(i);
                 startActivity(intent_ketQua);
                 t.interrupt();
-            } else {
-                Intent intent = new Intent(ThiSatHachActivity.this,MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(intent);
-                finish();
+                dialogFinish.dismiss();
             }
-            dialogFinish.dismiss();
         }
-        if(view.getId() == R.id.bt_huyBo) {
+        if(view.getId() == R.id.bt_cancel) {
+            Intent intent = new Intent(ThiSatHachActivity.this,MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
             dialogFinish.dismiss();
         }
     }
+
     public void resetCauHoi() {
         adapterRecyclerViewThiSatHach = new AdapterRecyclerViewThiSatHach(this,list.get(dem-1),dem-1);
         rcv_thiSatHach.setAdapter(adapterRecyclerViewThiSatHach);
         Log.d("Dap an dung:",list.get(dem-1).getDapAn());
     }
+
+    @Override
+    public void onBackPressed() {
+        ok = false;
+        dialogFinish.show();
+    }
+
     public void setTime(){
         if (time/60<10 && time%60<10){
             tv_time.setText("0"+(time/60)+":0"+(time%60));
@@ -250,11 +261,14 @@ public class ThiSatHachActivity extends AppCompatActivity implements View.OnClic
     public void run() {
         while (time > 0 && FLAG==1) {
             time--;
-            this.runOnUiThread(() -> {
-                setTime();
-                if (time==0){
-                    ok = true;
-                    dialogHetGio.show();
+            this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    setTime();
+                    if (time==0){
+                        ok = true;
+                        dialogHetGio.show();
+                    }
                 }
             });
             try {

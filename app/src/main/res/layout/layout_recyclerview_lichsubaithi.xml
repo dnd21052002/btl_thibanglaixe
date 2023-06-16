@@ -6,12 +6,11 @@
 
     <Button
         android:id="@+id/bt_deThi"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/default_header_color"
+        android:layout_width="65dp"
+        android:layout_height="@dimen/_60sdp"
         android:text="Đề 1"
+        android:background="@drawable/button_dethi"
         android:textAllCaps="false"
         android:textColor="#fff"
-        app:backgroundTint="@null" />
-
+        />
 </LinearLayout>

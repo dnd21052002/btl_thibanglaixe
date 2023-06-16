@@ -52,9 +52,9 @@ public class AdapterRecyclerViewLichSuBaiThi extends RecyclerView.Adapter<Adapte
         holder.bt_deThi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int pos = holder.getAdapterPosition();
+                pos = holder.getBindingAdapterPosition();
                 Intent intent_xemDapAn = new Intent(context, XemLaiDapAnActivity.class);
-                int SIZE = listDeThi.get(pos).getListCauHoi().size();
+                SIZE = listDeThi.get(pos).getListCauHoi().size();
                 intent_xemDapAn.putExtra("from", 'l');
                 context.startActivity(intent_xemDapAn);
             }
