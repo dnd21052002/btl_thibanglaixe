@@ -56,6 +56,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_b121.setOnClickListener(this);
         bt_cancel1.setOnClickListener(this);
     }
+    public void setDialogMeoThucHanh(){
+        dialogMeoThucHanh = new Dialog(this);
+        dialogMeoThucHanh.setContentView(R.layout.custom_dialog_meothuchanh);
+        dialogMeoThucHanh.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialogMeoThucHanh.setCanceledOnTouchOutside(true);
+        dialogMeoThucHanh.show();
+        bt_a122 = dialogMeoThucHanh.findViewById(R.id.bt_a122);
+        bt_b122 = dialogMeoThucHanh.findViewById(R.id.bt_b122);
+        bt_cancel2 = dialogMeoThucHanh.findViewById(R.id.bt_cancel2);
+        bt_a122.setOnClickListener(this);
+        bt_b122.setOnClickListener(this);
+        bt_cancel2.setOnClickListener(this);
+    }
 
     public void onClick(View view) {
         if (view.getId() == R.id.bt_thiSatHach) {
@@ -64,6 +77,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(view.getId() == R.id.bt_bienBao){
             Intent intentBienBao = new Intent(this,BienBaoActivity.class);
             startActivity(intentBienBao);
+        }
+
+        if(view.getId() == R.id.bt_meoThucHanh) {
+                setDialogMeoThucHanh();
         }
         if(view.getId() == R.id.bt_lichSuBaiThi) {
             Intent intent_lichsu = new Intent(MainActivity.this,LichSuBaiThiActivity.class);
@@ -87,7 +104,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dialogThiSatHach.dismiss();
         }
 
-
+        if(view.getId() == R.id.bt_a122){
+            Intent intentThucHanhA = new Intent(MainActivity.this,MeoThucHanhAActivity.class);
+            startActivity(intentThucHanhA);
+            dialogMeoThucHanh.dismiss();
+        }
+        if(view.getId() == R.id.bt_b122){
+            Intent intentThucHanhB = new Intent(MainActivity.this,MeoThucHanhBActivity.class);
+            startActivity(intentThucHanhB);
+            dialogMeoThucHanh.dismiss();
+        }
     }
 
 }
