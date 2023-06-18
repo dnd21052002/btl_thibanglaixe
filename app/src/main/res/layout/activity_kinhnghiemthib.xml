@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:popupTheme="@style/AppTheme"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KINH NGHIỆM THI"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textColor="#000"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_13sdp"
+                    android:textSize="@dimen/_17ssp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 1 - Xuất phát:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trước lúc lên xe tập lái bạn cần: \n\n\n - Kiểm tra, nếu cần thì chỉnh lại ghế ngồi cho phù hợp với mình để thực hiện các thao tác lái, côn, phanh, ga … được dễ dàng.\n\n - Kiểm tra 2 gương sao cho thấy được điểm bánh xe sau tiếp xúc với mặt đường. Cài dây an toàn, để máy nổ và chờ lệnh xuất phát. \n\n - Khi có lệnh xuất phát bạn thực hiện như sau: \n\n  º Bật đèn xi nhan trái. \n\n  º Vào số 1, nhả côn từ từ để xe đi. \n\n  º Khi qua vạch xuất phát khoảng 5 m thì tắt xinhan. \n\n  º Khi xe đã đi bạn có thể nhả hết côn cho xe tự chạy, không cần đạp ga. Và đi đến bài số 2. \n\n\n Các lỗi bị trừ điểm : \n\n 1. Không thắt dây an toàn, bị trừ 5 điểm. \n 2. Không bật đèn xi nhan trái khi xuất phát trừ 5 điểm.\n 3. Không tắt đèn xi nhan trái ở khoảng cách 5m sau vạch xuất phát (đèn xanh trên xe tắt), trừ 5 điểm. \n 4. Không bật và tắt đèn xi nhan trái kịp thời, bị trừ 5 điểm. \n 5. Quá 20 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe đã bật sáng) mà vẫn không đi qua vạch xuất phát, bị trừ 5 điểm. \n 6. Để xe chết máy, bị trừ 5 điểm/1 lần.\n 7. Để tốc độ động cơ quá 4000 vòng/phút, trừ 5 điểm. \n 8. Lái xe vượt tốc độ quy định, trừ 5 điểm.\n\n Bị loại khỏi trường thi khi:\n 1. Quá 10 giây kể từ khi có lệnh xuất phát (đèn xanh trên xe bật sáng) mà xe vẫn chưa vượt vạch xuất phát.\n 2. Xử lý tình huống không hợp lý gây tai nạn: bị truất quyền thi."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 2 - Dừng xe nhường đường cho người đi bộ:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Yêu cầu là bạn phải dừng xe đúng chỗ trước vạch trắng và đường đành cho người đi bộ ( sọc ngựa vằn). Cản xe phía trước cách vạch dừng không quá 0.5m. \n\n - Đỗ già quá ( chạm vạch trắng ) hoặc non quá (xa vạch trắng) đều bị trừ 5 điểm. \n\n - Các sân tập đã có sẵn vạch trên cọc biển báo hiệu. Khi vai người lái hoặc chốt cửa đến ngang cọc đó thì phải dừng lại.\n\n - Khi xe vừa tới vị trí thì đạp côn và phanh xe dừng lại ( nếu không cắt côn trước có thể xe sẽ chết máy). \n\n - Dừng xe xong, bạn nhả côn cho xe đi tiếp. Dừng lâu quá 30s sẽ bị trừ điểm. \n\n\n Các lỗi bị trừ điểm: \n\n 1. Không dừng xe ở vạch quy định, bị trừ 5 điểm.\n 2. Dừng xe chưa đến vạch dừng quy định bị trừ 5 điểm.\n 3. Dừng xe quá vạch dừng quy định, bị trừ 5 điểm. \n 4. Lái xe trên vỉa hè bị truất quyền thi.\n 5. Xử lý tình huống không hợp lý gây tai nạn, bị truất quyền thi. \n 6. Lái xe bị chết máy, lỗi một lần bị trừ 5 điểm \n 7. Để tốc độc động cơ qua 4.000 vòng/phút, mỗi lần bị trừ 5 điểm. Lái xe quá tốc độ quy định, cứ 3 giây bị trừ 1 điểm.\n\n Các lỗi bị loại:\n 1. Quá 30 giây mà xe vẫn chưa vượt vạch xuất phát.\n 2. Gây tai nạn."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 3 - Dừng xe khởi hành trên dốc lên:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Yêu cầu của bài này là xe không vượt quá vạch quy định, không bị tuột dốc quá 50cm, phải vượt khỏi dốc trong khoảng thời gian 30s (nếu không sẽ bị loại).\n\n - Không được tăng ga quá lớn ( số vòng quay động cơ trên 4000 vòng/ phút).\n\n - Sau khi qua bài 2, bạn nhả hết côn, phanh cho xe tự bò lên dốc. Về bản chất, bài này giống bài 2 ở chỗ dừng xe rồi lại đi tiếp: nhưng vì xe đang ở trên dốc nên chịu lực kéo trôi ngược về chân dốc, nếu bỏ phanh chân thì xe sẽ trôi. Do vậy cách xử lý ở bài 3 khác bài 2. \n\n\n Có 2 cách: \n\n  º Cách 1: Là cách dạy chính thống trong trường. \nSau khi xe đã dừng trên dốc, bạn kéo phanh tay với mục đích là thay phanh chân, giữ xe tại điểm dừng. Khi đó, bạn có thể bỏ chân phanh ra và đặt vào chân ga mớm lên. Đồng thời chân trái thả côn từ từ, đến khi thấy tay lái hoặc cần số rung lên báo hiệu các lá côn đã cắt vào nhau thì nhả nhẹ phanh tay, nghe ngóng nếu thấy xe không bị trôi, tụt thì bỏ phanh tay, xe sẽ tự bò lên. \n\n  º Cách 2: Là cách các lái già thường làm trong thực tế, không dùng đến phanh tay. \n\n\n - Sau khi căn cho vai hoặc núm cửa gần tới ngang cọc biển báo vạch dừng xe thì bạn đạp côn, thắng dừng xe. \n\n - Sau đó bạn nhả côn từ từ, đến khi thấy tay lái hoặc cần số rung thì nhả phanh chân, nghe ngóng, nếu thấy xe trôi thì đạp phanh chân vào, làm lại. Nếu thấy xe không trôi thì thả cho hết phanh chân, xe sẽ tự bò lên. Nếu nhả hết phanh chân mà xe vẫn đứng yên thì tiếp vào chân ga một chút đồng thời hơi nhả côn ra thêm – ( chú ý nếu nhả côn nhanh quá xe sẽ tắt máy - bị trừ điểm), khi này bạn phải nhanh chóng đề máy lại và tiếp tục bài."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 4 - Đi xe qua hàng đinh vuông góc - chữ Z"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Yêu cầu của bài này là 2 bánh xe bên phải phải đi lọt qua một vạch đường có bề rộng khoảng 30-35cm (dấu B). Mỗi lần bánh xe chạm vạch sẽ bị trừ 5 điểm, bánh xe đè vạch cứ 5s bị trừ 5 điểm ( quá 2 phút chưa qua bài bị trừ 5 điểm)\n\n - Khi rẽ vào đường hàng đinh bạn nên đánh lái muộn một chút để xe áp sát lề đường bên phải. Đi thật chậm và nhìn gương phải để quan sát bánh xe phía sau. Các sân thi cũng như sân tập thường kẻ sẵn vạch dẫn đường. Vạch này bằng mép ngoài hàng đinh, vì vậy nếu bánh xe cách vạch đó khoảng 10-15cm thì xe sẽ đi qua hàng đinh mà không chạm mép 2 bên.\n \n - Ngoài việc nhìn gương phải, bạn phải căn và bám vào một điểm mốc ở phía trước, thường là một vạch dánh dấu trên lể đường trước mặt vì có khi lúc đầu xe đi đúng khoảng cách với vạch căn bên phải nhưng sau đó do giữ lái không tốt nên xe bị chệch hướng.\n \n - Chú ý – nếu bánh xe bên phải đi ngoài hàng đinh thì sẽ bị loại.\n\n - Sau khi đi qua hàng đinh, bạn thấy gương chiếu hậu ngang với góc bên trái thì đánh hết lái sang trái, đồng thời quan sát gương chiếu hậu và trả lái phù hợp để thành xe song song với vạch giới hạn và cách 30-40cm khi song song thì trả thẳng lái tiến đến góc vuông thứ 2.\n\n - Quan sát khi thấy gương chiếu hậu bên phải ngang với góc thứ 2, dánh hết lái sang phải và trả thẳng lái tiến ra khỏi hình.\n\n - Để có thể đánh hết lái và trả thẳng lái cho nhanh, trong quá trình học bạn nên tập thuần thục động tác….. quay tay! (xoay vô lăng).\n\nĐặc biệt chú ý trong bài này phải vê côn để xe đi thật chậm mới đánh lái kịp."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 5 - Qua ngã tư có tín hiệu điều khiển giao thông"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu phải chấp hành nghiêm tín hiệu giao thông, dừng xe cách vạch dừng quy định không quá 0,5m, đi ngang ngã 4 trong thời gian 20s, nếu:\n\n  º Đi qua ngã 4 khi đèn đỏ bị trừ 10 điểm.\n\n º Dừng xe cách vạch hoặc quá vạch trên 0,5m bị trừ 5 điểm, chết máy mỗi lần trừ 5 điểm.\n\n º Không bật xinhan trái qua ngã 4, xinhan phải khi qua ngã 4 rẽ phải bị trừ 5 điểm.\n\n  º Không thực hiện đúng quy trình bài thi bị trừ 5 điểm.\n\n  º Tốc độ vòng quay quá 4000 vòng/ phút thì cứ 3s bị trừ 1 điểm."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 6 - Đi xe qua đường vòng quanh co (chữ S)"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Yêu cầu giống bài 5 ( mỗi lần bánh xe chạm vạch trừ 5 điểm).\n\n - Khác với bài 5, do chữ S là đường cong liên tục nên bạn phải điều chỉnh tay lái theo đường cong. Nguyên tắc lái xe ở đường cong “tiến bám lưng, lùi bám bụng” có nghĩa là: khi xe vào đường cua (ôm cua) nên căn theo phái đường cong dài hơn. Như vậy khi vào đường chữ S bạn cho xe bám sát lề bên phải, đánh lái sang trái cho xe đi nửa vòng cua đầu tiên sau đó lại bám sang lề đường bên trái, trả lái và đánh lái sang phải cho xe qua nốt nửa vòng cua còn lại."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 7 - Ghép xe vào nơi đỗ. (Lùi vào nhà xe dọc)"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu của bài này là trong vòng 2 phút bạn phải cho xe lùi được vào nơi đỗ ( Nhà xe), không chạm vạch và tiến ra khỏi nhả xe.\n\n Các lỗi: \n  º Mỗi lần bánh xe chạm vạch trừ 5 điểm ( Mỗi 2 giây) \n  º Quá thời gian 2 phút trừ 5 điểm ( Mỗi 2 phút trừ 5 điểm) \n  º Bánh xe không chạm được vạch kiểm tra cuối nhà xe bị loại ( Máy thông báo)\n  º Không hạng xe bị loại ( Nhầm nhà xe hạng xe khác)\n\n Khi bắt đầu rẽ vào khu vực nhà xe, bám sát lề đường bên trái cách khoảng (30cm – 50cm). Đi chậm( Số 1) khi ( vai người lái) đi ngang qua cửa nhà xe thì đánh hết lái về bên phải, tiếp tục cho xe tiến lên khi thấy thân xe có góc khoảng 40-45 độ so với đường ngang cửa nhà xe thì trả thẳng lái và dừng lại trước vạch giới hạn.\n Sau đó nhìn kiếng chiếu hậu bên trái quan sát phía sau( bánh xe, thân xe và góc nhà xe) – xem thế xe rồi vào số lùi, tùy theo thế xe “lơi” háy “dốc” mà ta đánh tay lái sang trái nhiều hay ít, điều chỉnh sau cho bánh xe sau khi lùi vào cách góc nhà xe khoảng 10-15 cm – khi bánh xe sắp đến góc nhà xe thì đánh nhiều lái sang trái cho xe lùi vào bên trong nhà xe – quan sát thấy thành xe, bánh xe song song với nhà xe và cách vạch giới hạn 20cm – 30cm thì trả thẳng lái và lùi vào cho đến khi bánh xe sau đè lên vạch thì dừng lại.\n Cài số 1 và tiến ra khỏi nhà xe. Lưu ý khi tiến ra, người phải ra khỏi cửa nhà xe hoặc hơn một chút nữa bạn hãy đánh lái rẽ sang phải để tránh trường hợp bánh sau chưa ra khỏi cửa nhà xe mà đã rẽ sẽ bị chèn vạch, trừ điểm.\n Nếu lỡ lùi chưa chính xác, đuôi xe cách xa cửa nhà xe, có thể chèn lên vạch hoặc vỉa ba-toa, bạn cứ bình tĩnh về lại số 1, tiến về phía trước, đánh lái sao cho xe ở vào vị trí thẳng trước cửa nhà xe, sau đó vào số lùi để làm lại việc lùi vào nhà xe. (Gọi là lùi xe 2 đỏ)"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 8. Dừng xe nơi giao nhau với đường sắt:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu và thực hành của bài này giống bài 2."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 9. Tăng tốc, tăng số:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Yêu cầu của bài này là phải lên được số 2 và đạt tốc dộ trên 24kmh trước biển báo 20 màu xanh (biển báo tốc dộ tối thiểu phải đạt 20 km/h), sau đó lại phải về số 1 và giảm tốc dộ xuống dưới 20km/h. - Sau khi qua nơi giao nhau với đường sắt, bạn rẽ sang đường chuẩn bị tăng tốc. Chỉnh lái cho xe thẳng, giữ chắc tay lái, nhả hết côn, phanh. Qua biển “Tăng số, tăng tốc” (Bảng vuông) Nhấn ga để xe tăng tốc, rồi khẩn trương sang số 2, tiếp tục nhấn ga tiếp (nửa ga là đủ đạt tốc độ). Qua biển 20 màu xanh, nhả ga, rà phanh, cho xe đi chậm lại, thậm chí dừng hẳn, về số 1 từ từ để xe đi qua biển 20 màu trắng. - Chú ý là bạn không được cắt côn để xe trôi từ từ qua biển 20 màu trắng, vì yêu cầu ở đây là bạn phải đi qua biển này khi xe có gài số. Vì thế nếu bạn cắt côn làm bánh răng số không quay thì sẽ bị trừ 5 điểm."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 10. Ghép xe ngang - Đỗ xe song song:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Ghép xe ngang vào nơi đỗ - đỗ xe song song là lùi xe vào nơi cần đỗ khi 2 đầu và 1 mặt bên đều bị khóa bởi vật cản hoặc những xe khác có chiều dài là 6,45m và rộng 2,2m. Có thể đối với người lái xe quen và thường xuyên thực hiện bài này thì cực kỳ dễ nhưng hiện bài này đang làm học viên chuẩn bị thi sát hạch lái xe bối rối và cảm giác lo lắng.\n\n Bước 1. Cặp xe song song với bãi đỗ, cách xe đang đỗ 50-80cm, tiến xe tới khoảng 2/3 bãi đỗ ( hoặc căn mũi xe ngang vạch trên)\n\n Bước 2. Đánh hết lái sang trái, tiến lên từ từ sao cho gương chiếu hậu bên trái + thành xe thẳng hàng 1 góc 45 độ so với bãi đỗ.\n\n Bước 3. Lùi xe từ từ vào bãi cho tới khi gương chiếu hậu bên tay phải ngang với vạch giới hạn ngoài, đánh hết lái sang trái, lùi xe vô chuồng. \n\n Bước 4. Khi bánh sau bên phải cán lên vạch ngang - trả thẳng lái, chỉnh xe ngay ngắn. Hoàn thành bài thi.\n\n Đánh hết lái sang trái, tiến lên ra khỏi chuồng tới các bài thi tiếp theo.\n\n - Yêu cầu phải đạt được trong bài này: \n   º Không được đè vạch cảm ứng giới hạn trong bài thi.\n   º Không vượt quá 2 phút trong bài thi này\n\n  º Giữ vòng tua máy không quá 4000 vòng/ phút\n  º Không bị tắt máy trong quá trình thực hiện bài tập và tốc độ không quá 24km"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 11. Kết thúc:"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu của bài này là đi thẳng qua vạch kết thúc, trước đó phải bật đèn xi-nhan phải (với ý nghĩa là xe tấp vào lề đường bên phải, chuẩn bị dừng hoặc đỗ xe).\n\n Sau khi vòng qua ngã tư lần cuối cùng, bạn chỉnh xe cho thẳng và để xe đi từ từ về vạch xuất phát. Bật xi-nhan bên phải. Chú ý sau khi đã bật xi-nhan thì giữ thẳng tay lái, không đánh lái sang trái sẽ làm tắt đèn xi-nhan, mất điểm. Để cho chắc ăn, bạn có thể dừng ngón giữa táy trái giữ cần xi-nhan để không cho cầ này bật xuống, hoặc hơi đánh lái sang phải một chút.\n  º Trong sân sát hạch, ngoài khu vực các bài sát hạch, thí sinh sẽ gặp tình huống nguy hiểm; tình huống này sẽ gặp ngẫu nhiên, bất ngờ. Kể từ khi có tín hiệu tình huống nguy hiểm(tiếng loa báo tín hiệu nguy hiểm và đèn đỏ bật sáng) nếu không phanh dừng xe trong thời gian 3 giây bị trừ 10 điểm; khi hết báo hiệu tình huống nguy hiểm, nếu không ấn nút tắt tình huống nguy hiểm trên xe trong thời hạn 5 giây bị trừ 10 điểm; nếu không thực hiện được các thao tác trên bị trừ 10 điểm.\n  º Khi điểm sát hạch dưới 80 điểm bị truất quyền sát hạch.  º Quá 15 phút mà chưa xong kết thúc(Chưa hoàn thành các bài thi) thì cứ quá 3 giây bị trừ 10 điểm."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

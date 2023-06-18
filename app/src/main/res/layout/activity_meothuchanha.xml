@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:popupTheme="@style/AppTheme"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SƠ ĐỒ THI SÁT HẠCH LÁI XE A1, A2"
+                    android:textSize="@dimen/_17ssp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    />
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="@dimen/_266sdp"
+                    android:layout_height="@dimen/_166sdp"
+                    android:src="@drawable/a"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NỘI DUNG 4 BÀI SA HÌNH SÁT HẠCH LÁI XE A1, A2"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài số 1: Lái xe theo vòng số 8\n\nBài số 2: Lái xe trên đường thẳng\n\nBài số 3: Lái xe trên đường ngoằn ngoèo\n\nBài số 4: Lái xe trên đường gồ ghề"
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Các lỗi bị trừ điểm:"
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Điểm tối thiểu để đạt là 80/100."
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Trừ 5 điểm: cán vạch, chết máy, chân chạm đất\n\n- Trừ 25 điểm - loại trực tiếp: học viên để té xe hoặc đi sai hình (đi ngược vòng) hoặc sẽ bị lọa trực tiếp"
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:id="@+id/tv_kinhNghiemThiA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kinh nghiệm thi >>"
+                    android:textColor="#36b1ea"
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_58sdp"
+                    android:textSize="@dimen/_14ssp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>
