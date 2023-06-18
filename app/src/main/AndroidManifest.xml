@@ -54,6 +54,32 @@
             android:screenOrientation="portrait"
             >
         </activity>
+        <activity android:name=".Activities.MeoThucHanhAActivity"
+            android:parentActivityName=".Activities.MainActivity"
+            android:label="Mẹo thực hành"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".Activities.MeoThucHanhBActivity"
+            android:parentActivityName=".Activities.MainActivity"
+            android:label="Mẹo thực hành"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".Activities.KinhNghiemThiAActivity"
+            android:parentActivityName=".Activities.MeoThucHanhAActivity"
+            android:label="Kinh nghiệm thi"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".Activities.KinhNghiemThiBActivity"
+            android:parentActivityName=".Activities.MeoThucHanhBActivity"
+            android:label="Kinh nghiệm thi"
+            android:screenOrientation="portrait"
+            >
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:popupTheme="@style/AppTheme"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KINH NGHIỆM THI"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textColor="#000"
+                    android:paddingLeft="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_13sdp"
+                    android:textSize="@dimen/_17ssp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Đầu tiên bạn dừng xe trước vạch xuất phát và chờ hiệu lệnh bắt đầu bài thi. Khi vào trong sa hình vòng số 8 thì lưu ý điều khiển bánh trước chạy áp sát mép ngoài của vòng số 8 khoảng 5 đến 10 cm để đảm bảo cho bánh sau được nằm gọn trong vòng số 8. Làm như vậy khi bạn ôm cua bánh xe không bị trượt ra ngoài vòng \n\n- Khi ôm cua hãy giữ vững tay lái, loạng choạng hay lắc lư tay lái rất dễ dẫn đến việc bị mất điều khiển xe và việc cán vạch là điều khó tránh khỏi. \n\n- Giữa số 2 hoặc số 3, số nào ổn định nhất thì bạn đi. Đừng đi số 1 vì máy sẽ rất bốc dẫn đến việc lỡ tay quá ga xe sẽ lao ngay khỏi vòng. Với số 4, máy sẽ quá yếu cho nên khi đi qua khúc cua, xe sẽ không đủ tốc độ làm chết máy và bạn sẽ phải chống chân. \n\n- Hãy chú ý để chạy đúng hướng vòng số 8 và chạy đủ 1,5 vòng. Có rất nhiêu trường hợp bị trượt do chỉ chạy được nửa vòng  đâu rồi sau đó chạy nhầm hướng. Nhiều trường hợp chạy chưa đủ vòng đã vào lối cho bài thi số 2.\n\n- Nếu các ạn không tập trung được để nhìn hình thì hãy nhớ trong đầu là khi đến của thi vòng số 8 thì chạy theo chiều sau: rẽ phải -> rẽ trái -> rẽ phải -> rẽ trái -> rẽ phải. Chạy đủ 5 bước rẽ này là kết thúc bài thi vòng số 8 với đủ số lượng 1,5 vòng. Ở lần rẽ phải cuối cùng, bạn sẽ đến bài thi số 2."
+                    android:layout_margin="@dimen/_13sdp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13ssp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

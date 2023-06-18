@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:popupTheme="@style/AppTheme"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SƠ ĐỒ THI SÁT HẠCH LÁI XE B1, B2"
+                    android:textSize="@dimen/_17ssp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    />
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="@dimen/_266sdp"
+                    android:layout_height="@dimen/_166sdp"
+                    android:src="@drawable/b"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NỘI DUNG 11 BÀI SA HÌNH SÁT HẠCH LÁI XE B1, B2"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bài 1: Xuất phát.\n\nBài 2: Dừng xe nhường đường cho người đi bộ.\n\nBài 3: Dừng xe, khởi hành trên dốc.\n\nBài 4: Đi qua hàng đinh, qua đường vuông góc.\n\nBài 5: Đi xe qua ngã tư có tín hiệu điều khiển giao thông.\n\nBài 6: Đi xe qua đường vòng quanh co.\n\nBài 7: Ghép xe dọc vào nơi đỗ.\n\nBài 8: Dừng xe nơi giao nhau với đường sắt.\n\nBài 9: Tăng tốc, tăng số.\n\nBài 10: Ghép xe ngang vào nơi đỗ.\n\nBài 11: Kết thúc."
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:textColor="#000"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    />
+                <TextView
+                    android:id="@+id/tv_kinhNghiemThiB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kinh nghiệm thi >>"
+                    android:textColor="#36b1ea"
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_58sdp"
+                    android:textSize="@dimen/_14ssp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>
