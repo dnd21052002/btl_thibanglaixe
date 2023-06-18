@@ -44,7 +44,7 @@ public class XemLaiDapAnActivity extends AppCompatActivity {
         list = new ArrayList<>();
         if (getIntent().getCharExtra("from",' ')=='l') {
             list = AdapterRecyclerViewLichSuBaiThi.getListCauHoi();
-            adapterRecyclerViewXemDapAn = new AdapterRecyclerViewXemDapAn(this,list,checkDungSai,'l');
+            adapterRecyclerViewXemDapAn = new AdapterRecyclerViewXemDapAn(this,list,checkDungSai,'t');
         }
         else {
             for (int i=0;i<SIZE;i++){
