@@ -82,6 +82,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(view.getId() == R.id.bt_meoThucHanh) {
                 setDialogMeoThucHanh();
         }
+        if (view.getId() == R.id.bt_lyThuyet) {
+            Intent intentLyThuyet = new Intent(MainActivity.this, LyThuyetActivity.class);
+            startActivity(intentLyThuyet);
+
+        }
+
         if(view.getId() == R.id.bt_lichSuBaiThi) {
             Intent intent_lichsu = new Intent(MainActivity.this,LichSuBaiThiActivity.class);
             startActivity(intent_lichsu);
