@@ -36,5 +36,6 @@
         android:layout_marginBottom="@dimen/_25sdp"
         android:layout_marginRight="@dimen/_25sdp"
         android:background="@drawable/ic_menu"
+        app:backgroundTint="@null"
         android:contentDescription="Mở menu ứng dụng"/>
 </FrameLayout>
