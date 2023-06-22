@@ -28,6 +28,12 @@
             android:label="Thi sát hạch"
             android:parentActivityName=".Activities.MainActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activities.MeoGhiNhoActivity"
+            android:label="Thi sát hạch"
+            android:parentActivityName=".Activities.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
         <activity android:name=".Activities.BienBaoActivity"
             android:parentActivityName=".Activities.MainActivity"
             android:label="Biển báo"

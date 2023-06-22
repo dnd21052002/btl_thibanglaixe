@@ -78,6 +78,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intentBienBao = new Intent(this,BienBaoActivity.class);
             startActivity(intentBienBao);
         }
+        if(view.getId() == R.id.bt_meoGhiNho){
+            Intent intentMeoGhiNho = new Intent(this,MeoGhiNhoActivity.class);
+            startActivity(intentMeoGhiNho);
+        }
 
         if(view.getId() == R.id.bt_meoThucHanh) {
                 setDialogMeoThucHanh();
@@ -114,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intentThucHanhB);
             dialogMeoThucHanh.dismiss();
         }
+
     }
 
 }
