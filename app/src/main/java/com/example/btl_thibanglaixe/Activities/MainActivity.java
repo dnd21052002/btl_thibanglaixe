@@ -94,6 +94,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dialogThiSatHach.dismiss();
         }
 
+        if(view.getId() == R.id.bt_cancel2) {
+            dialogMeoThucHanh.dismiss();
+        }
+
         if(view.getId() == R.id.bt_a121) {
             Intent intentThiSatHachA = new Intent(MainActivity.this, ThiSatHachActivity.class);
             intentThiSatHachA.putExtra("tenBaiThi",'a');
