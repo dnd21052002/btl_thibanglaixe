@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/default_header_color"
         app:theme="@style/ToolbarColoredBackArrow"
         android:popupTheme="@style/AppTheme">
 
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:background="@color/default_header_color">
 
         <Button
             android:id="@+id/bt_truoc"

@@ -18,7 +18,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_4sdp"
-            android:background="@color/colorPrimary"
+            android:background="@color/default_header_color"
             />
         <LinearLayout
             android:layout_width="match_parent"
