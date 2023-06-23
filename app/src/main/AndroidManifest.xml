@@ -83,6 +83,12 @@
             android:screenOrientation="portrait"
             >
         </activity>
+        <activity android:name=".Activities.LyThuyetActivity"
+            android:parentActivityName=".Activities.MeoThucHanhAActivity"
+            android:label="Lý thuyết"
+            android:screenOrientation="portrait"
+            >
+        </activity>
         <activity android:name=".Activities.KinhNghiemThiBActivity"
             android:parentActivityName=".Activities.MeoThucHanhBActivity"
             android:label="Kinh nghiệm thi"

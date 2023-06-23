@@ -9,7 +9,7 @@
     android:layout_gravity="center">
 
     <LinearLayout
-        android:id="@+id/custom_title_thisathach"
+        android:id="@+id/custom_title_lythuyet"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
         android:orientation="vertical"

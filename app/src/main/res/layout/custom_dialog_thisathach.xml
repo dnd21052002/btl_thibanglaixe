@@ -10,7 +10,7 @@
     >
 
     <LinearLayout
-        android:id="@+id/custom_title_thisathach"
+        android:id="@+id/custom_title_lythuyet"
         android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
