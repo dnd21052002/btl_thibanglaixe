@@ -27,12 +27,15 @@
             android:name=".Activities.ThiSatHachActivity"
             android:label="Thi sát hạch"
             android:parentActivityName=".Activities.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".Activities.MeoGhiNhoActivity"
-            android:label="Thi sát hạch"
+            android:label="Mẹo ghi nhớ"
             android:parentActivityName=".Activities.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
 
         <activity android:name=".Activities.BienBaoActivity"
             android:parentActivityName=".Activities.MainActivity"
