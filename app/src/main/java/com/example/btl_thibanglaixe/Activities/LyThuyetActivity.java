@@ -3,6 +3,7 @@ package com.example.btl_thibanglaixe.Activities;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.OverScroller;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -17,7 +18,6 @@ import com.example.btl_thibanglaixe.Adapter.AdapterRecyclerViewLyThuyet;
 import com.example.btl_thibanglaixe.DAO.CauHoiDAO;
 import com.example.btl_thibanglaixe.R;
 
-//import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
 
 public class LyThuyetActivity extends AppCompatActivity implements View.OnClickListener{
@@ -28,6 +28,7 @@ public class LyThuyetActivity extends AppCompatActivity implements View.OnClickL
     CauHoiDAO cauHoiDAO;
     Toolbar toolbar;
     TextView toolbar_title;
+    OverScroller overScroller;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +48,14 @@ public class LyThuyetActivity extends AppCompatActivity implements View.OnClickL
         adapterRecyclerViewLyThuyet = new AdapterRecyclerViewLyThuyet(this,cauHoiDAO.getListCauHoi(dem));
         rcv_lyTHuyet.setAdapter(adapterRecyclerViewLyThuyet);
         rcv_lyTHuyet.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
-        //OverScrollDecoratorHelper.setUpOverScroll(rcv_lyTHuyet, OverScrollDecoratorHelper.ORIENTATION_VERTICAL);
+
         bt_truoc.setOnClickListener(this);
         bt_sau.setOnClickListener(this);
+
         RecyclerViewHeader header = (RecyclerViewHeader) findViewById(R.id.header);
         header.attachTo(rcv_lyTHuyet);
+
+        overScroller = new OverScroller(this);
     }
 
     @Override
@@ -72,5 +76,9 @@ public class LyThuyetActivity extends AppCompatActivity implements View.OnClickL
             }
         }
         toolbar_title.setText(dem+"/18");
+        int targetPosition = 0; // Vị trí mục tiêu để cuộn đến
+        int duration = 500; // Thời gian cuộn (ms)
+        overScroller.startScroll(0, rcv_lyTHuyet.getScrollY(), 0, targetPosition, duration);
+        rcv_lyTHuyet.postInvalidateOnAnimation();
     }
 }
