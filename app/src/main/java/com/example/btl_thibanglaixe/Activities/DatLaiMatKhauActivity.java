@@ -12,7 +12,7 @@ import com.example.btl_thibanglaixe.DAO.NguoiDungDao;
 public class DatLaiMatKhauActivity extends AppCompatActivity {
 
         EditText edtMatKhau, edtNhapLaiMatKhau, edtMaXacNhan;
-        Button btnDatLai;
+        Button btnDatLai, btnHuy;
 
         NguoiDungDao nguoiDungDao;
 
@@ -24,6 +24,7 @@ public class DatLaiMatKhauActivity extends AppCompatActivity {
             edtNhapLaiMatKhau = findViewById(com.example.btl_thibanglaixe.R.id.edtNhapLaiMatKhau);
             edtMaXacNhan = findViewById(com.example.btl_thibanglaixe.R.id.edtMaXacNhan);
             btnDatLai = findViewById(com.example.btl_thibanglaixe.R.id.btnDatLai);
+            btnHuy = findViewById(com.example.btl_thibanglaixe.R.id.btnHuy);
             nguoiDungDao = new NguoiDungDao(this);
             String maXacNhanMail = "colammoicoan";
 
@@ -55,5 +56,13 @@ public class DatLaiMatKhauActivity extends AppCompatActivity {
 
                  }
             });
+            btnHuy.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(android.view.View v) {
+                    Intent intent = new Intent(DatLaiMatKhauActivity.this, DangNhapActivity.class);
+                    startActivity(intent);
+                }
+            });
+
         }
 }

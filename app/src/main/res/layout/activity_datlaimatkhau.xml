@@ -47,5 +47,10 @@
         android:layout_width="350dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"/>
-
+    <Button
+        android:id="@+id/btnHuy"
+        android:text="Hủy"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
