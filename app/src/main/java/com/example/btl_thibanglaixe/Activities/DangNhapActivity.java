@@ -42,6 +42,7 @@ public class DangNhapActivity extends AppCompatActivity{
             public void onClick(View v) {
                 String username = mEditTextUsername.getText().toString();
                 String password = mEditTextPassword.getText().toString();
+                String name = nguoiDungDao.getName(username);
 //                kiểm tra username và password đã được nhập chưa, nếu chưa thì yêu cầu
                 if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
                     Toast.makeText(DangNhapActivity.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
@@ -50,6 +51,7 @@ public class DangNhapActivity extends AppCompatActivity{
                 boolean check = nguoiDungDao.checkLogin(username, password);
                 if(check) {
                     Intent intent = new Intent(DangNhapActivity.this, MainActivity.class);
+                    intent.putExtra("name", name);
                     startActivity(intent);
                 }
                 else {

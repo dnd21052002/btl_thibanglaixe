@@ -23,24 +23,21 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/default_header_color"
             android:popupTheme="@style/AppTheme"
+            app:navigationIcon="@drawable/ic_arrow_back_white"
+            android:layout_gravity="center"
+            app:theme="@style/ToolbarColoredBackArrow"
             >
+<!--            add menu icon at right-->
+
             <TextView
+                android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thi bằng lái xe"
-                android:layout_gravity="center"
-                android:id="@+id/toolbar_title"
-                android:textSize="22.10sp"
-                android:textColor="#fff"
-                />
-<!--            add menu icon at right-->
-            <Button
-                android:id="@+id/btn_logout"
-                android:layout_width="100dp"
-                android:layout_height="@dimen/_41sdp"
                 android:layout_gravity="right"
-                android:background="@color/default_header_color"
-                android:text="đăng xuất"/>
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"
+                android:text="ádasd"
+                android:textColor="@color/white"/>
         </androidx.appcompat.widget.Toolbar>
 
         <ImageView

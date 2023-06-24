@@ -25,7 +25,6 @@
             android:label="App thi bằng lái xe"
             android:exported="true"
             android:launchMode="singleTop"
-            android:parentActivityName=".Activities.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
