@@ -12,15 +12,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.btl_thibanglaixe.R;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+    Toolbar toolbar;
     LinearLayout bt_thiSatHach, bt_bienBao, bt_lyThuyet, bt_meoGhiNho, bt_meoThucHanh, bt_lichSuBaiThi;
-    Button bt_a121, bt_b121, bt_cancel1, bt_a122, bt_b122, bt_cancel2, bt_cancel3, bt_logout, bt_dongY1;
+    Button bt_a121, bt_b121, bt_cancel1, bt_a122, bt_b122, bt_cancel2, bt_cancel3, bt_dongY1;
     Dialog dialogThiSatHach, dialogMeoThucHanh, dialogDangXuat;
+    TextView tv_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,20 +33,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void setControl(){
+        toolbar = findViewById(R.id.toolbar);
         bt_thiSatHach = findViewById(R.id.bt_thiSatHach);
         bt_bienBao = findViewById(R.id.bt_bienBao);
         bt_lyThuyet = findViewById(R.id.bt_lyThuyet);
         bt_meoGhiNho = findViewById(R.id.bt_meoGhiNho);
         bt_meoThucHanh = findViewById(R.id.bt_meoThucHanh);
         bt_lichSuBaiThi = findViewById(R.id.bt_lichSuBaiThi);
-        bt_logout = findViewById(R.id.btn_logout);
+        tv_name = findViewById(R.id.tv_name);
         bt_thiSatHach.setOnClickListener(this);
         bt_bienBao.setOnClickListener(this);
         bt_lyThuyet.setOnClickListener(this);
         bt_meoGhiNho.setOnClickListener(this);
         bt_meoThucHanh.setOnClickListener(this);
         bt_lichSuBaiThi.setOnClickListener(this);
-        bt_logout.setOnClickListener(this);
+        String name = getIntent().getStringExtra("name");
+        tv_name.setText("Xin chào: " + name);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setDialogDangXuat();
+            }
+        });
     }
 
     public void setDialogThiSatHach(){
@@ -86,9 +98,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View view) {
-        if (view.getId() == R.id.btn_logout) {
-            setDialogDangXuat();
-        }
         if (view.getId() == R.id.bt_cancel3) {
             dialogDangXuat.dismiss();
         }

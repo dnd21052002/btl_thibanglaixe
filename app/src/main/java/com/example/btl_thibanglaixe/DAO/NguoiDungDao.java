@@ -62,6 +62,13 @@ public class NguoiDungDao{
         close();
     }
 
+    public String getName(String username) {
+        open();
+        String cauTruyVan = "select name from NguoiDung where username = '" + username + "'";
+        Cursor cursor = database.rawQuery(cauTruyVan, null);
+        cursor.moveToFirst();
+        return cursor.getString(0);
+    }
     public boolean userExist(String username) {
         open();
         String cauTruyVan = "select * from NguoiDung where username = '" + username + "'";
