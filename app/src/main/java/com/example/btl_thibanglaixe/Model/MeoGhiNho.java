@@ -1,7 +1,5 @@
 package com.example.btl_thibanglaixe.Model;
 
-
-
 public class MeoGhiNho {
     int id;
     int loai;

@@ -33,6 +33,14 @@
                 android:textSize="22.10sp"
                 android:textColor="#fff"
                 />
+<!--            add menu icon at right-->
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/_41sdp"
+                android:layout_gravity="right"
+                android:background="@color/default_header_color"
+                android:text="đăng xuất"/>
         </androidx.appcompat.widget.Toolbar>
 
         <ImageView

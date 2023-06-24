@@ -16,6 +16,16 @@
             android:name=".Activities.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
+            android:parentActivityName=".Activities.DangNhapActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Activities.DangNhapActivity"
+            android:label="App thi bằng lái xe"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activities.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +33,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.DangKyActivity"
+            android:label="Đăng ký"
+            android:parentActivityName=".Activities.DangNhapActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activities.QuenMatKhauActivity"
+            android:label="Đặt lại mật khẩu"
+            android:parentActivityName=".Activities.DangNhapActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activities.DatLaiMatKhauActivity"
+            android:label="Đặt lại mật khẩu"
+            android:parentActivityName=".Activities.QuenMatKhauActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
         <activity
             android:name=".Activities.ThiSatHachActivity"
             android:label="Thi sát hạch"
@@ -96,5 +125,6 @@
             >
         </activity>
     </application>
+    <meta-data android:name="android.hardware.touchscreen.multitouch.distinct" android:value="true" />
 
 </manifest>

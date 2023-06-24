@@ -2,10 +2,6 @@ package com.example.btl_thibanglaixe.Model;
 
 import java.io.Serializable;
 
-/**
- * Created by Hiep on 11/13/2017.
- */
-
 public class CauHoi implements Serializable{
     private int id;
     private String cauHoi;
