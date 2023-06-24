@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Thành phần giao diện cho đăng nhập -->
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:src="@drawable/app_icon"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:text="Đăng nhập"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:hint="Tên đăng nhập"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:hint="Mật khẩu"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Đăng nhập"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:text="Chưa có tài khoản? Đăng ký"
+        android:textSize="16sp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:text="Quên mật khẩu?"
+        android:textSize="16sp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+</LinearLayout>

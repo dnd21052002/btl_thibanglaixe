@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Thành phần giao diện cho đăng ký -->
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:src="@drawable/app_icon"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:text="Đặt lại mật khẩu"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/edtMaXacNhan"
+        android:hint="Mã xác nhận"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtMatKhau"
+        android:hint="Mật khẩu mới"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edtNhapLaiMatKhau"
+        android:hint="Nhập lại mật khẩu"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btnDatLai"
+        android:text="Đặt lại"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

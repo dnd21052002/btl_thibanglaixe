@@ -19,8 +19,8 @@ import com.example.btl_thibanglaixe.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     LinearLayout bt_thiSatHach, bt_bienBao, bt_lyThuyet, bt_meoGhiNho, bt_meoThucHanh, bt_lichSuBaiThi;
-    Button bt_a121, bt_b121, bt_cancel1, bt_a122, bt_b122, bt_cancel2;
-    Dialog dialogThiSatHach, dialogMeoThucHanh;
+    Button bt_a121, bt_b121, bt_cancel1, bt_a122, bt_b122, bt_cancel2, bt_cancel3, bt_logout, bt_dongY1;
+    Dialog dialogThiSatHach, dialogMeoThucHanh, dialogDangXuat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +35,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_meoGhiNho = findViewById(R.id.bt_meoGhiNho);
         bt_meoThucHanh = findViewById(R.id.bt_meoThucHanh);
         bt_lichSuBaiThi = findViewById(R.id.bt_lichSuBaiThi);
+        bt_logout = findViewById(R.id.btn_logout);
         bt_thiSatHach.setOnClickListener(this);
         bt_bienBao.setOnClickListener(this);
         bt_lyThuyet.setOnClickListener(this);
         bt_meoGhiNho.setOnClickListener(this);
         bt_meoThucHanh.setOnClickListener(this);
         bt_lichSuBaiThi.setOnClickListener(this);
+        bt_logout.setOnClickListener(this);
     }
 
     public void setDialogThiSatHach(){
@@ -70,7 +72,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_cancel2.setOnClickListener(this);
     }
 
+    public void setDialogDangXuat() {
+        dialogDangXuat = new Dialog(this);
+        dialogDangXuat.setContentView(R.layout.custom_dialog_dangxuat);
+        dialogDangXuat.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialogDangXuat.setCanceledOnTouchOutside(true);
+        dialogDangXuat.show();
+        bt_cancel3 = dialogDangXuat.findViewById(R.id.bt_cancel3);
+        bt_dongY1 = dialogDangXuat.findViewById(R.id.bt_dongY1);
+        bt_cancel3.setOnClickListener(this);
+        bt_dongY1.setOnClickListener(this);
+
+    }
+
     public void onClick(View view) {
+        if (view.getId() == R.id.btn_logout) {
+            setDialogDangXuat();
+        }
+        if (view.getId() == R.id.bt_cancel3) {
+            dialogDangXuat.dismiss();
+        }
+        if (view.getId() == R.id.bt_dongY1) {
+            Intent intentDangNhap = new Intent(MainActivity.this, DangNhapActivity.class);
+            startActivity(intentDangNhap);
+        }
         if (view.getId() == R.id.bt_thiSatHach) {
             setDialogThiSatHach();
         }
