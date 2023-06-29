@@ -20,7 +20,7 @@ import java.util.List;
 public class AdapterRecyclerViewLyThuyet extends RecyclerView.Adapter<AdapterRecyclerViewLyThuyet.RecyclerViewHolder> {
     List<CauHoi> listCauHoi = new ArrayList<CauHoi>();
     Context context;
-    private LayoutInflater mInflater;
+    private LayoutInflater mInflater; //lớp chuyển đổi các tập tin layout XML thành các đối tượng View
     public AdapterRecyclerViewLyThuyet(Context context,List<CauHoi> listCauHoi) {
         this.listCauHoi = listCauHoi;
         this.context = context;
